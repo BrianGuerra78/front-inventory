@@ -29,5 +29,10 @@ export class CategoryService {
     const endpoint = `${this.urlEndPoint}/categories/${id}`;
     return this.http.delete(endpoint);
   }
+
+  getCategorieById(id:any){//shear categories
+    const endpoint = `${this.urlEndPoint}/categories/${id}`;
+    return this.http.get(endpoint);
+  }
   
 }
