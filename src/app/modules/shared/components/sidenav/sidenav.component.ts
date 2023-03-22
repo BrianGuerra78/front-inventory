@@ -16,7 +16,7 @@ export class SidenavComponent implements OnInit {
   ];
 
   constructor(media: MediaMatcher){
-    this.mobileQuery = media.matchMedia('(max-width: 600px');
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
   }
 
   ngOnInit(): void{
