@@ -11,8 +11,13 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(){
+  getProducts(){//get all the products
     const endpoint = `${this.urlEndPoint}/products`;
     return this.http.get(endpoint);
+  }
+
+  saveProduct(body:any){
+    const endpoint = `${this.urlEndPoint}/products`;
+    return this.http.post(endpoint,body);
   }
 }
