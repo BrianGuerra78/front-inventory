@@ -16,13 +16,18 @@ export class ProductService {
     return this.http.get(endpoint);
   }
 
-  saveProduct(body:any){
+  saveProduct(body:any){//save product
     const endpoint = `${this.urlEndPoint}/products`;
     return this.http.post(endpoint,body);
   }
 
-  updateProduct(body:any, id:any){
+  updateProduct(body:any, id:any){//update product
     const endpoint = `${this.urlEndPoint}/products/${id}`;
     return this.http.put(endpoint,body);
+  }
+
+  deleteProduct(id: any){//delete product
+    const endpoint = `${this.urlEndPoint}/products/${id}`;
+    return this.http.delete(endpoint);
   }
 }
