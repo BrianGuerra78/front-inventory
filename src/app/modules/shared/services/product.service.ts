@@ -30,4 +30,9 @@ export class ProductService {
     const endpoint = `${this.urlEndPoint}/products/${id}`;
     return this.http.delete(endpoint);
   }
+
+  getProductByName(name: any){//search by name
+    const endpoint = `${this.urlEndPoint}/products/filter/${name}`;
+    return this.http.get(endpoint);
+  }
 }
