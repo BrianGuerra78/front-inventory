@@ -20,4 +20,9 @@ export class ProductService {
     const endpoint = `${this.urlEndPoint}/products`;
     return this.http.post(endpoint,body);
   }
+
+  updateProduct(body:any, id:any){
+    const endpoint = `${this.urlEndPoint}/products/${id}`;
+    return this.http.put(endpoint,body);
+  }
 }
