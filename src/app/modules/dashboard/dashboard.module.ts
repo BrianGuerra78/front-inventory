@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../shared/material.module';
 import { CategoryModule } from '../category/category.module';
+import { ProductModule } from '../product/product.module';
 
 
 
@@ -17,7 +18,8 @@ import { CategoryModule } from '../category/category.module';
   imports: [
     CommonModule,
     SharedModule,
-    CategoryModule
+    CategoryModule,
+    ProductModule
   ]
 })
 export class DashboardModule { }
