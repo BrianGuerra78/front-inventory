@@ -7,6 +7,8 @@ import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../shared/material.module';
 import { CategoryModule } from '../category/category.module';
 import { ProductModule } from '../product/product.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -19,7 +21,10 @@ import { ProductModule } from '../product/product.module';
     CommonModule,
     SharedModule,
     CategoryModule,
-    ProductModule
+    ProductModule,
+    MaterialModule,
+    FlexLayoutModule,
+    NgChartsModule
   ]
 })
 export class DashboardModule { }
